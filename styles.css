@@ -1,0 +1,203 @@
+/* =====Base*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.6rem; /* 26 pixels */
+  background-image: url("images/background-5.png");
+  background-size: 700px;
+  background-repeat: repeat;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===== Utilities*/
+
+.container {
+  color: rgb(240, 240, 233);
+
+  max-width: 125rem;
+
+  /* Top and bottom 0, auto left and right. */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Header & Nav*/
+
+header {
+  position: absolute; /*So that it always remains floating on the top and covering the top border of the content */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #e9e9d92a;
+}
+
+.nav {
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 5rem;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+  color: #42422f
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  width: 6rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ===== Main content*/
+
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.content-details {
+  max-width: 70%;
+}
+
+.title {
+  font-size: 8rem;
+  color: rgb(226, 226, 212);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: rgb(236, 236, 231);
+  margin-bottom: 2.5rem;
+}
+
+.search {
+  margin-bottom: 2.5rem;
+}
+
+.search input {
+  border: none;
+  border-radius: 2rem;
+  padding: 3rem;
+  outline: none;
+}
+
+.search-bar {
+  width: calc(100% - 9rem);
+  color: rgb(66, 66, 47);
+}
+
+.search-btn {
+  width: 12rem;
+  background-color: rgb(88, 88, 74);
+  color: rgb(226, 226, 212);
+  cursor: pointer;
+  margin-left: -10rem;
+}
+
+.search-btn:hover {
+  background-color: rgb(58, 58, 46);
+}
+
+.sm-list {
+  display: flex;
+  color: rgb(88, 88, 74);
+}
+
+.sm-link {
+  color: rgb(150, 150, 137);
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid rgb(150, 150, 137);
+  border-radius: 50%;
+  display: flex;
+  margin-right: 2.5rem;
+}
+
+.sm-link i {
+  margin: auto;
+}
+
+.sm-link:hover {
+  color: rgb(150, 150, 137);
+}
+
+.image-group {
+  text-align: center;
+  position: relative;
+}
+
+.h-mascot {
+  position: absolute;
+  top: 2.5rem;
+  left: -1rem;
+  z-index: 10;
+}
+
+.calculator {
+  position: absolute;
+  z-index: -1r;
+}
+
+.curly-brackets {
+  top: 15rem;
+  left: -17rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #202009b4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: rgb(150, 150, 137);
+  text-align: center;
+  height: 8rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* ===== Animations*/
+
+/* ===== Media Queries*/
